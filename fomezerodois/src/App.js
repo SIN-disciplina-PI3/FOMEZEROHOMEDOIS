@@ -1,23 +1,29 @@
-import logo from './logo.svg';
+import fz from './fz.png';
 import './App.css';
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+          <div class="main-login">
+        <div class="left-login">
+            <h1>FOME ZERO</h1>
+            <img src= {fz} class="left-login-image "alt="Logo Fome Zero"></img>
+        </div>
+        <div class="right-login">
+            <div class="card-login">
+                <h3>CADASTRE-SE</h3>
+                <div class="textfield">
+                    <label for="usuario">Usuário</label>
+                    <input type="text" name="usuario" placeholder="Usuário:"></input>
+                </div>
+                <div class="textfield">
+                    <label for="senha">Senha</label>
+                    <input type="password" name="senha" placeholder="Senha:"></input>
+                </div>
+                <button class="btn-login"> Login</button>
+            </div>
+        </div>
+</div>
     </div>
   );
 }
